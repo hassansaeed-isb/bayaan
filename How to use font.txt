@@ -1,0 +1,32 @@
+How to Use This Font
+⚠️ This documentation covers usage on web platforms only.
+For environments like React Native, Android, or iOS, you'll need to handle font integration using platform-specific methods.
+You can use this font in your application by downloading the font file—available in multiple formats such as TTF, WOFF, and WOFF2. You may choose the format that best fits your platform or include multiple formats for broader compatibility.
+
+Some fonts—such as those used for Surah names or Juz titles—depend on special characters or ligatures to render correctly. Ligature files for these fonts are available on this page. Standard Quran fonts require a separate Quran script, which you can download from the Quran Scripts page.
+The next step is to declare the font using @font-face in your CSS file and apply it to your elements.
+
+Steps to Integrate
+Download the font and scripts/ligatures
+Define a @font-face Rule in Your CSS
+
+              @font-face {
+  font-family: '';
+  src: url('https://static-cdn.tarteel.ai/qul/fonts/nastaleeq/Hanafi/normal-v4.2.2/with-waqf-lazmi/font.ttf') format('truetype');
+  font-display: swap;
+}
+            
+Use the @font-face in your html
+You can use the font by:
+
+Applying it directly via style or CSS:
+
+  <div style="font-family: '';">
+  
+  </div>
+
+Or using a CSS class:
+.my-text {
+  font-family: ;
+}
+<p class="my-text"></p>
