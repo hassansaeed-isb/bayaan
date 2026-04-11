@@ -13,7 +13,7 @@ conn = mysql.connector.connect(
 cursor = conn.cursor()
 
 # Load JSON
-with open("indopak-nastaleeq.json", "r", encoding="utf-8") as f:
+with open("indopak-nastaleeq.json/indopak-nastaleeq.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 ayah_set = set()
