@@ -271,3 +271,6 @@ INSERT INTO surahs (id, name_arabic, name_english) VALUES
 (112, 'الإخلاص', 'Al-Ikhlas'),
 (113, 'الفلق', 'Al-Falaq'),
 (114, 'الناس', 'An-Nas');
+
+INSERT INTO translations (name, language, direction)
+VALUES ('bayan-ul-quran', 'urdu', 'rtl');

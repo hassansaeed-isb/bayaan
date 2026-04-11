@@ -1,0 +1,103 @@
+# ============================================
+# Python Virtual Environments
+# ============================================
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# ============================================
+# Python __pycache__ and compiled files
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================
+# IDE and Editor Files
+# ============================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+.vim/
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# OS-specific files
+# ============================================
+# Windows
+Thumbs.db
+*.lnk
+ehthumbs.db
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+.directory
+
+# ============================================
+# Project-specific files
+# ============================================
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Log files
+*.log
+logs/
+
+# Local development
+.env.local
+.env.*.local
+
+# IDE cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node modules (if using frontend tools)
+node_modules/
