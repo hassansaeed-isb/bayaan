@@ -12,6 +12,18 @@
 
 Deeper product + data model: [ReadMe.md](ReadMe.md), [TechnicalOverview.md](TechnicalOverview.md).
 
+### No extra “data” bundle?
+
+After **`git clone`**, **`data/` is already in the repo**: `db-schema.sql` and **`import-quran-aya-words.py`**. You do **not** need a private download to start.
+
+| Need | What to do |
+|------|------------|
+| **Arabic words in the DB** | Run **`python data/import-quran-aya-words.py --all-chapters`** (uses the **Quran.com API** over the network). No local JSON required. |
+| **Legacy flat JSON instead** | Obtain an `indopak-nastaleeq`-style file yourself, put it under something like **`data/indopak-nastaleeq.json/`**, then run **`python data/import-quran-aya-words.py --legacy-json`** with that file path. That folder is **gitignored** on purpose. |
+| **Urdu Bayan segments** | Optional: keep exports on disk (not in git), run **`scripts/batch_import_bayan.py`** — see §3. |
+
+If **`data/` was deleted locally**, restore it from Git: **`git checkout HEAD -- data/`**.
+
 ---
 
 ## 1) MySQL (pick one)
