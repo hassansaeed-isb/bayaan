@@ -1,5 +1,7 @@
 # Bayaan
 
+**Run the API (env, Docker MySQL, uvicorn):** [RUNNING.md](RUNNING.md)
+
 Bayaan is a Quran-focused web application designed to present the Arabic text of the Qur’an alongside its translations in a **structurally aligned and visually intuitive way**.
 
 Unlike traditional Quran apps that display full translations below an entire ayah, Bayaan introduces a **segment-based alignment system**, where portions of an ayah are directly mapped to their corresponding translation—making it easier to study, explain, and understand the Qur’an.

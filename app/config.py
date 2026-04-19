@@ -3,9 +3,14 @@ Configuration settings for Bayaan API
 """
 
 import os
+from pathlib import Path
+
 from dotenv import load_dotenv
 
-# Load environment variables from .env file if it exists
+_REPO = Path(__file__).resolve().parent.parent
+# Repo-root run `python -m uvicorn ...` loads app/.env reliably (before cwd-dependent `.env`).
+load_dotenv(_REPO / "app" / ".env")
+load_dotenv(_REPO / ".env")
 load_dotenv()
 
 # -------------------------
@@ -18,6 +23,10 @@ DATABASE_CONFIG = {
     "password": os.getenv("DB_PASSWORD", "your_password"),
     "database": os.getenv("DB_NAME", "bayaan"),
 }
+
+_db_port = os.getenv("DB_PORT", "").strip()
+if _db_port:
+    DATABASE_CONFIG["port"] = int(_db_port)
 
 # -------------------------
 # API Configuration

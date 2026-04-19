@@ -1,0 +1,23 @@
+.venv/
+venv/
+.cache/
+app/.env
+.env
+
+# Local commentary sources (import scripts read your machine copy; not part of the app runtime)
+bayan ul quran/
+
+# Optional local word corpus for --legacy-json (place file here yourself)
+data/indopak-nastaleeq.json/
+
+# Font binaries / docs (UI asset; not used by the API)
+fonts/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# OS / editors
+Thumbs.db
+~$*
